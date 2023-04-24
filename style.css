@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+  background-color: #f2f2f2;
   margin: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -8,18 +8,18 @@ main {
   margin: 5px;
 }
 .header {
-  background-color: orchid;
+  background-color: lightseagreen;
   width: 100%;
   text-align: center;
   padding: 20px;
   margin-bottom: 40px;
 }
 .name {
-  color: black;
+  color: white;
   font-size: 30px;
 }
 #title {
-  color: lightpink;
+  color: lightseagreen;
   text-decoration: underline;
 }
 
@@ -30,12 +30,28 @@ main {
   margin-right: 20px;
 }
 .subtitle-style {
-  color: blueviolet;
+  color: lightseagreen;
 }
-.footer{
-  background-color: brown;
-  width:100%;
+.contact {
+  color: lightseagreen;
+  text-decoration: underline;
+}
+.footer {
+  background-color: lightseagreen;
+  width: 100%;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+#text {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.text {
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
