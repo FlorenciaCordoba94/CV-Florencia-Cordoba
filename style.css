@@ -23,11 +23,17 @@ main {
   text-decoration: underline;
 }
 
+#personal-information {
+  color: lightseagreen;
+  font-weight: bold;
+}
+
 .cv-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   margin-right: 20px;
+  float: right;
 }
 .subtitle-style {
   color: lightseagreen;
