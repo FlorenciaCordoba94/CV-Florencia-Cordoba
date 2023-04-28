@@ -12,35 +12,37 @@
       <span class="name">Florencia Verónica Córdoba</span>
     </header>
     <main>
+      <div class="title-container">
       <h1 id="title">QUIÉN SOY</h1>
-      <div>
-        <img src="/imagen/img.jpg" class="cv-image" alt="Florencia Córdoba" />
-        <table class="table">
-          <caption id="personal-information">DATOS PERSONALES</caption>
-          <tr>
-            <th style="text-align:left;">Nombre</th>
-            <th style="text-align:left;">Edad</th>
-            <th style="text-align:left;">Domicilio</th>
-            <th style="text-align:left;">Teléfono</th>
-            <th style="text-align:left;">Email</th>
-          </tr>
-          <tr>
-            <td>Florencia Verónica Córdoba</td>
-            <td>29</td>
-            <td>Formosa 2840,Merlo</td>
-            <td>1134933128</td>
-            <td>florveronicacordoba@gmail.com</td>
-          </tr>
-        </table>
-        <p>
-          Me considero una persona responsable, dinámica y creativa, con
-          facilidad de adaptación y capacidad de trabajar en equipo, en
-          condiciones de alta presión, con iniciativa para resolver problemas
-          eficazmente y lograr las metas y objetivos trazados por la empresa. 
-        </p>
+      <img src="/imagen/img.jpg" class="cv-image" alt="Florencia Córdoba" />
       </div>
       <section>
-        <article>
+        <article class="article-style">
+          <table class="table">
+            <caption id="personal-information">DATOS PERSONALES</caption>
+            <tr class="row-style">
+              <th >Nombre</th>
+              <th >Edad</th>
+              <th >Domicilio</th>
+              <th >Teléfono</th>
+              <th >Email</th>
+            </tr>
+            <tr>
+              <td >Florencia Verónica Córdoba</td>
+              <td >29</td>
+              <td >Formosa 2840,Merlo</td>
+              <td >1134933128</td>
+              <td >florveronicacordoba@gmail.com</td>
+            </tr>
+          </table>
+          <p>
+            Me considero una persona responsable, dinámica y creativa, con
+            facilidad de adaptación y capacidad de trabajar en equipo, en
+            condiciones de alta presión, con iniciativa para resolver problemas
+            eficazmente y lograr las metas y objetivos trazados por la empresa. 
+          </p>
+        </article>
+        <article class="article-style">
           <h3 class="subtitle-style">ESTUDIOS</h3>
           <ul>
             <li>Tecnicatura en Tecnologías Web UNO (En curso). </li>
@@ -50,7 +52,7 @@
             <li>Agente de Propaganda Médica UAI (2012-2013)</li>
           </ul>
         </article>
-        <article>
+        <article class="article-style">
           <h3 class="subtitle-style">CURSOS</h3>
           <ul>
             <li>Programación Web Inicial Multiplica 2.0 (En curso)</li>
@@ -63,13 +65,13 @@
             </li>
           </ul>
         </article>
-        <article>
+        <article class="article-style">
           <h3 class="subtitle-style">IDIOMAS</h3>
           <ul>
             <li>Inglés Intermedio</li>
           </ul>
         </article>
-        <article>
+        <article class="article-style">
           <h3 class="subtitle-style">EXPERIENCIA PROFESIONAL</h3>
           <ul>
             <li>
@@ -88,23 +90,25 @@
         </article>
       </section>
       <section>
-        <h2 class="contact">Contactame</h2>
-        <div>
+         <div>
+          <h2 class="contact">Contactame</h2>
           <form>
+          <div class="input-container-style">
             <label for="name">Nombre</label>
-            <input type class="text" />
-            <div>
-              <div>
-            <label for="email"
-              >Email
+            <input type="text"  id="name" name="name"/>
+          </div>
+          <div class="input-container-style">
+            <label for="email">Mail</label>
+            <input type="email"  id="email" name="email"/>
+          </div>
+          <div class="input-container-style">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" ></textarea>
+          </div>
+          <button type="submit" >Enviar</button>
             </div>
-            <div>
-              <label for="mensaje">Tu mensaje</label>
-              <input type id="text" />
-              <input type ="submit" value="Enviar">
-            </div>
-           
-          </form>
+            
+           </form>
         
       </section>
   
