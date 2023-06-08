@@ -27,11 +27,11 @@ function getInputValues() {
   const salary = document.querySelector("#salary").value;
 
   let salaryFormatted =
-    "Pesos: " +
+    "Pesos: $" +
     salary +
-    " - Dólares: " +
+    " - Dólares: U$S" +
     getSalaryInDollars(salary) +
-    " - Euros: " +
+    " - Euros: €" +
     getSalaryInEuros(salary);
 
   const inputs = [
