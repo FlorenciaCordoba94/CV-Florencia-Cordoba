@@ -80,7 +80,9 @@ main {
   margin-right: 20px;
   margin-top: 20px;
 }
-.input-container-style {
-  margin-right: 20px;
-  margin-bottom: 20px;
+
+.form-display-style {
+  color: lightseagreen;
+  margin: 20px;
+  font-weight: bold;
 }

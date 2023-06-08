@@ -13,39 +13,41 @@
     </header>
     <main>
       <div class="title-container">
-      <h1 id="title">QUIÉN SOY</h1>
-      <img src="/imagen/img.jpg" class="cv-image" alt="Florencia Córdoba" />
+        <h1 id="title">QUIÉN SOY</h1>
+        <img src="/imagen/img.jpg" class="cv-image" alt="Florencia Córdoba" />
       </div>
       <section>
         <article class="article-style">
           <table class="table">
-            <caption id="personal-information">DATOS PERSONALES</caption>
+            <caption id="personal-information">
+              DATOS PERSONALES
+            </caption>
             <tr class="row-style">
-              <th >Nombre</th>
-              <th >Edad</th>
-              <th >Domicilio</th>
-              <th >Teléfono</th>
-              <th >Email</th>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Domicilio</th>
+              <th>Teléfono</th>
+              <th>Email</th>
             </tr>
             <tr>
-              <td >Florencia Verónica Córdoba</td>
-              <td >29</td>
-              <td >Formosa 2840,Merlo</td>
-              <td >1134933128</td>
-              <td >florveronicacordoba@gmail.com</td>
+              <td>Florencia Verónica Córdoba</td>
+              <td>29</td>
+              <td>Formosa 2840,Merlo</td>
+              <td>1134933128</td>
+              <td>florveronicacordoba@gmail.com</td>
             </tr>
           </table>
           <p>
             Me considero una persona responsable, dinámica y creativa, con
             facilidad de adaptación y capacidad de trabajar en equipo, en
             condiciones de alta presión, con iniciativa para resolver problemas
-            eficazmente y lograr las metas y objetivos trazados por la empresa. 
+            eficazmente y lograr las metas y objetivos trazados por la empresa.
           </p>
         </article>
         <article class="article-style">
           <h3 class="subtitle-style">ESTUDIOS</h3>
           <ul>
-            <li>Tecnicatura en Tecnologías Web UNO (En curso). </li>
+            <li>Tecnicatura en Tecnologías Web UNO (En curso).</li>
             <li>
               Tecnicatura en Radiología Instituto Agustina Bermejo (2014-2017)
             </li>
@@ -90,33 +92,86 @@
         </article>
       </section>
       <section>
-         <div>
-          <h2 class="contact">Contactame</h2>
-          <form>
-          <div class="input-container-style">
-            <label for="name">Nombre</label>
-            <input type="text"  id="name" name="name"/>
+        <div class="d-flex p-3">
+          <div class="w-25 border p-3">
+            <h2>Contactame</h2>
+            <form
+              id="form"
+              onsubmit="event.preventDefault(); getInputValues();resetForm()"
+            >
+              <div class="form-group my-4">
+                <label for="nombre" class="d-block">Nombre Empresa</label>
+                <input
+                  type="name"
+                  id="enterprise-name"
+                  name="name"
+                  class="w-100"
+                  required
+                />
+              </div>
+              <div class="form-group my-4">
+                <label for="Email" class="d-block">Correo</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-100"
+                  required
+                />
+              </div>
+              <div class="form-group my-4">
+                <label for="fecha" class="d-block">Fecha</label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  class="w-100"
+                  required
+                />
+              </div>
+
+              <div class="form-group my-4">
+                <label for="Sueldo" class="d-block">Sueldo mínimo</label>
+                <input
+                  type="number"
+                  id="salary"
+                  name="salary"
+                  class="w-100"
+                  required
+                />
+              </div>
+              <div class="form-group my-4">
+                <label for="description" class="d-block">Oferta Laboral</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="5"
+                  class="w-100"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group my-4">
+                <button type="submit" class="btn btn-success">Enviar</button>
+              </div>
+            </form>
           </div>
-          <div class="input-container-style">
-            <label for="email">Mail</label>
-            <input type="email"  id="email" name="email"/>
-          </div>
-          <div class="input-container-style">
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" ></textarea>
-          </div>
-          <button type="submit" >Enviar</button>
-            </div>
-            
-           </form>
-        
+          <div id="data-input-container" class="mx-4"></div>
+        </div>
+        <button
+          id="sort-button"
+          onclick="orderBySalary()"
+          class="btn btn-success d-none"
+        >
+          Ordenar por sueldo
+        </button>
       </section>
-  
     </main>
     <footer class="footer">
       <span
-        >Página diseñada por Florencia Córdoba para entrega de proyecto CV
-        Web -Universidad Nacional del Oeste <a href="https://www.uno.edu.ar/"> UNO</a>-</span
+        >Página diseñada por Florencia Córdoba para entrega de proyecto CV Web
+        -Universidad Nacional del Oeste
+        <a href="https://www.uno.edu.ar/"> UNO</a>-</span
       >
     </footer>
   </body>
